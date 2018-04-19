@@ -2,13 +2,13 @@
 
 Keeping track of lab inventory status with Slack as the user interface.
 
-![slack-sql](slack-sql.png)
+![slack-sql](slack_sql.png)
 
 ## Database
 
 A MySQL DB example can be recreated with [GCP_import.sql](database/GCP_import.sql) in [GCP](https://cloud.google.com/sql/docs/mysql/import-export/importing#importing_a_sql_dump_file).
 
-```bash
+```sql
 MySQL [lab_inventory]> SELECT * FROM device_table;
 +--------------+----------+-------------+--------+--------+---------------+
 | node         | sw_image | hardware    | config | user   | device_status |
